@@ -4,6 +4,8 @@ package PostsLater::Plugin;
 use strict;
 use warnings;
 
+use base qw(MT::Plugin);
+
 my @days = qw(Sunday Monday Tuesday Wednesday Thursday Friday Saturday);
 
 sub load_config {
