@@ -11,3 +11,17 @@
   <input type="text" name="post_window_start" id="post_window_start" value="<mt:var name="post_window_start">" maxlength="5"/> - <input type="text" name="post_window_end" id="post_window_end" value="<mt:var name="post_window_end">" maxlength="5" />
 </mtapp:setting>
 
+<mtapp:setting
+   id="post_day"
+   label="Posting Days">
+  <ul>
+    <li><input type="checkbox" value="1" name="post_day_sunday" id="post_day_sunday"<mt:if post_day_monday> checked="checked"</mt:if> /> Sunday</li>
+    <li><input type="checkbox" value="1" name="post_day_monday" id="post_day_monday"<mt:if post_day_monday> checked="checked"</mt:if> /> Monday</li>
+    <li><input type="checkbox" value="1" name="post_day_tuesday" id="post_day_tuesday"<mt:if post_day_monday> checked="checked"</mt:if> /> Tuesday</li>
+    <li><input type="checkbox" value="1" name="post_day_wednesday" id="post_day_wednesday"<mt:if post_day_monday> checked="checked"</mt:if> /> Wednesday</li>
+    <li><input type="checkbox" value="1" name="post_day_thursday" id="post_day_thursday"<mt:if post_day_monday> checked="checked"</mt:if> /> Thursday</li>
+    <li><input type="checkbox" value="1" name="post_day_Friday" id="post_day_friday"<mt:if post_day_monday> checked="checked"</mt:if> /> Friday</li>
+    <li><input type="checkbox" value="1" name="post_day_saturday" id="post_day_saturday"<mt:if post_day_monday> checked="checked"</mt:if> /> Saturday</li>
+  </ul>
+</mtapp:setting>
+
