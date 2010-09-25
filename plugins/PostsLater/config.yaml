@@ -1,6 +1,8 @@
 name: PostsLater
 description: Optimizings the order of scheduled posts.
 
+init: sub { my $p = shift; require PostsLater::Plugin; bless $p, 'PostsLater::Plugin'; }
+
 settings:
   entries_per_day:
     scope: blog
