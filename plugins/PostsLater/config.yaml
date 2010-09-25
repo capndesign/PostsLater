@@ -1,0 +1,17 @@
+name: PostsLater
+description: Optimizings the order of scheduled posts.
+
+settings:
+  entries_per_day:
+    scope: blog
+    default: 1
+  post_window_start:
+    scope: blog
+    default: 9:00
+  post_window_end:
+    scope: blog
+    default: 17:00
+  post_days:
+    scope: blog
+
+blog_config_template: blog_config.tmpl
